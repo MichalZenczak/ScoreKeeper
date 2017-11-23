@@ -25,19 +25,20 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="Team A"
-                    android:textColor="#616161"
-                    android:textSize="22sp" />
+                    android:text="@string/teamA_textView"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/teamFontSize" />
 
                 <TextView
                     android:id="@+id/team_a_goal_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:freezesText="true"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="0"
-                    android:textSize="64sp"
-                    android:freezesText="true"/>
+                    android:text="@string/score_textView"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/primaryFontSize" />
 
                 <View
                     android:layout_width="match_parent"
@@ -69,9 +70,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="F"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/foul_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_a_faul_score"
@@ -79,11 +80,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
                             android:text="0"
                             android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -99,9 +100,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="P"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/penatly_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_a_penalty_score"
@@ -109,11 +110,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -128,9 +129,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="YC"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/yellowCard_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_a_yellow_card_score"
@@ -138,11 +139,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -157,9 +158,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="RC"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/redCard_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_a_red_card_score"
@@ -167,11 +168,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -182,9 +183,10 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="goal !!!"
-                    android:textStyle="bold"
-                    android:onClick="goalForTeamA"/>
+                    android:onClick="goalForTeamA"
+                    android:text="@string/goal_button"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -192,8 +194,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="foul"
-                    android:onClick="addFaulForTeamA"/>
+                    android:onClick="addFaulForTeamA"
+                    android:text="@string/foul_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -201,8 +204,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="penalty"
-                    android:onClick="addPenaltyForTeamA"/>
+                    android:onClick="addPenaltyForTeamA"
+                    android:text="@string/penalty_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -210,8 +214,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="yellow card"
-                    android:onClick="addYellowCardForTeamA"/>
+                    android:onClick="addYellowCardForTeamA"
+                    android:text="@string/yellowCard_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -219,8 +224,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="red card"
-                    android:onClick="addRedCardForTeamA"/>
+                    android:onClick="addRedCardForTeamA"
+                    android:text="@string/redCard_button"
+                    android:textColor="@color/textColorPrimary" />
 
             </LinearLayout>
 
@@ -242,19 +248,20 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="Team B"
-                    android:textColor="#616161"
-                    android:textSize="22sp" />
+                    android:text="@string/teamB_textView"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/teamFontSize" />
 
                 <TextView
                     android:id="@+id/team_b_goal_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:freezesText="true"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="0"
-                    android:textSize="64sp"
-                    android:freezesText="true"/>
+                    android:text="@string/score_textView"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/primaryFontSize" />
 
                 <View
                     android:layout_width="match_parent"
@@ -286,9 +293,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="F"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/foul_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_b_faul_score"
@@ -296,11 +303,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
+                            android:text="@string/score_textView"
                             android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -316,9 +323,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="P"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/penatly_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_b_penalty_score"
@@ -326,11 +333,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -345,9 +352,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="YC"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/yellowCard_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_b_yellow_card_score"
@@ -355,11 +362,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -374,9 +381,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
                             android:padding="8dp"
-                            android:text="RC"
-                            android:textColor="#616161"
-                            android:textSize="16sp" />
+                            android:text="@string/redCard_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
 
                         <TextView
                             android:id="@+id/team_b_red_card_score"
@@ -384,11 +391,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="sans-serif-medium"
+                            android:freezesText="true"
                             android:padding="8dp"
-                            android:text="0"
-                            android:textColor="#616161"
-                            android:textSize="16sp"
-                            android:freezesText="true"/>
+                            android:text="@string/score_textView"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/secondaryFontSize" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -399,9 +406,10 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="goal !!!"
-                    android:textStyle="bold"
-                    android:onClick="goalForTeamB"/>
+                    android:onClick="goalForTeamB"
+                    android:text="@string/goal_button"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -409,8 +417,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="foul"
-                    android:onClick="addFaulForTeamB"/>
+                    android:onClick="addFaulForTeamB"
+                    android:text="@string/foul_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -418,8 +427,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="penalty"
-                    android:onClick="addPenaltyForTeamB"/>
+                    android:onClick="addPenaltyForTeamB"
+                    android:text="@string/penalty_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -427,8 +437,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="yellow card"
-                    android:onClick="addYellowCardForTeamB"/>
+                    android:onClick="addYellowCardForTeamB"
+                    android:text="@string/yellowCard_button"
+                    android:textColor="@color/textColorPrimary" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -436,8 +447,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
-                    android:text="red card"
-                    android:onClick="addRedCardForTeamB"/>
+                    android:onClick="addRedCardForTeamB"
+                    android:text="@string/redCard_button"
+                    android:textColor="@color/textColorPrimary" />
 
             </LinearLayout>
         </LinearLayout>
@@ -447,8 +459,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="24dp"
-            android:text="reset"
-            android:onClick="resetAllScores"/>
+            android:onClick="resetAllScores"
+            android:text="@string/reset_button"
+            android:textColor="@color/textColorPrimary" />
 
     </LinearLayout>
 

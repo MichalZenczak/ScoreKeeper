@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="secondaryFontSize">16sp</dimen>
+    <dimen name="primaryFontSize">64sp</dimen>
+    <dimen name="teamFontSize">22sp</dimen>
+</resources>
