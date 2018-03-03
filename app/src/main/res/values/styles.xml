@@ -9,4 +9,64 @@
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
 
     </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="teamNameStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/teamFontSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mainScoreStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">@dimen/primaryFontSize</item>
+    </style>
+
+    <style name="horizontalDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="secondaryScoreLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="secondaryScoreStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:textSize">@dimen/secondaryFontSize</item>
+    </style>
+
+
 </resources>

@@ -3,11 +3,10 @@
     <string name="teamA_textView">Team A</string>
     <string name="teamB_textView">Team B</string>
     <string name="score_textView">0</string>
-    <string name="penatly_textView">P</string>
+    <string name="penalty_textView">P</string>
     <string name="foul_textView">F</string>
     <string name="yellowCard_textView">YC</string>
     <string name="redCard_textView">RC</string>
-
     <string name="goal_button">GOAL !!!</string>
     <string name="foul_button">FOUL</string>
     <string name="penalty_button">PENALTY</string>

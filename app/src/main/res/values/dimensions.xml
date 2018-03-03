@@ -3,4 +3,10 @@
     <dimen name="secondaryFontSize">16sp</dimen>
     <dimen name="primaryFontSize">64sp</dimen>
     <dimen name="teamFontSize">22sp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="marginBottom">8dp</dimen>
+    <dimen name="marginStart">24dp</dimen>
+    <dimen name="marginEnd">24dp</dimen>
+    <dimen name="viewMarginTop">16dp</dimen>
+    <dimen name="buttonMarginTop">24dp</dimen>
 </resources>
